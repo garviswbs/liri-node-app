@@ -58,7 +58,7 @@ if (firstInput === "my-tweets") {
 } else if (firstInput === "movie-this") {
     movieName = secondInput || "Mr. Nobody";
 
-    var qURL = `http://www.omdbapi.com/?t=${secondInput}&y=&plot=short&apikey=trilogy`;
+    var qURL = `http://www.omdbapi.com/?t=${movieName}&y=&plot=short&apikey=trilogy`;
     console.log(qURL);
 
     request(qURL, function (error, response, body) {
